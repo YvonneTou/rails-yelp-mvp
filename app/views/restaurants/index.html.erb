@@ -1,0 +1,22 @@
+<div class="container my-5"></div>
+  <div class="row mx-5">
+    <div class="d-flex justify-content-between">
+      <h1>All Restaurants</h1>
+      <div class="row my-3">
+      <%= link_to new_restaurant_path do %>
+        <button type="button" class="btn btn-success">Add a new restaurant</button>
+      <% end %>
+      </div>
+    </div>
+    <% @restaurants.each do |restaurant| %>
+      <div class="card mb-3">
+        <div class="card-body">
+          <p>
+            <%= link_to restaurant.name, restaurant_path(restaurant) %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</div>
