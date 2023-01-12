@@ -1,7 +1,7 @@
 <%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name, label: 'Restaurant name' %>
+  <%= f.input :name, label: 'Restaurant Name' %>
   <%= f.input :address, label: 'Address' %>
-  <%= f.input :phone_number, label: 'Phone number' %>
+  <%= f.input :phone_number, label: 'Phone Number' %>
   <%= f.input :category, label: 'Category', collection: %w[chinese italian japanese french belgian] %>
   <%= f.button :submit, class: "btn btn-success" %>
 <% end %>
